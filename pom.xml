@@ -68,7 +68,7 @@
 	</dependencies>
 	<profiles>
 		<profile>
-			<id>RegressionSuite</id>
+			<id>Regression</id>
 			<build>
 				<plugins>
 					<plugin>
