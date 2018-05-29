@@ -4,7 +4,6 @@
 	<test name="RestAssured Test">
 		<classes>
 			<class name="com.twitterapi.automation.tweets.GetTweetTimelineTest"></class>
-			<!-- <class name="com.twitterapi.automation.tweets.GetTweetTimelineTest"></class> -->
 		</classes>
 	</test>
 </suite>
