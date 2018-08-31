@@ -1,5 +1,9 @@
-C:\Users\Sumit\workspace\automation\src\test\java\resources\Paths.java
-C:\Users\Sumit\workspace\automation\src\test\java\resources\Creds.java
-C:\Users\Sumit\workspace\automation\src\test\java\com\twitterapi\automation\tweets\GetTweetTimelineTest.java
-C:\Users\Sumit\workspace\automation\src\test\java\resources\Endpoints.java
-C:\Users\Sumit\workspace\automation\src\test\java\resources\Utilities.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\resource\contants\Endpoints.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\resource\Specifications.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\resource\contants\ResourcePaths.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\launch\Hooks.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\launch\TweetTimeline.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\launch\PostStatus.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\resource\Utilities.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\launch\TestRunner.java
+C:\Users\Bittu\Desktop\Sumit\restApi\src\test\java\com\twitterapi\automation\resource\Creds.java
