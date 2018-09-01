@@ -26,7 +26,6 @@ public class Hooks extends Specifications {
 	public void tearDownClass() {
 		if(afterClassFlag){
 			afterClassFlag = false;
-			System.out.println("After");
 			softAssert.assertAll();
 		}
 	}

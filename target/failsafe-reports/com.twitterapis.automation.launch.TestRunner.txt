@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.twitterapis.automation.launch.TestRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.933 sec <<< FAILURE! - in com.twitterapis.automation.launch.TestRunner
-initializationError(com.twitterapis.automation.launch.TestRunner)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: io/cucumber/stepexpression/TypeRegistry
-Caused by: java.lang.ClassNotFoundException: io.cucumber.stepexpression.TypeRegistry
-

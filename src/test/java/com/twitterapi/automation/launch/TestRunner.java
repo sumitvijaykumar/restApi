@@ -15,38 +15,4 @@ import cucumber.api.CucumberOptions;
 		plugin={"pretty"}
 		)
 public class TestRunner{
-	/*private TestNGCucumberRunner testNGCucumberRunner;
-	@BeforeClass
-	public void setUpClass(){
-		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-		setSoftAssert();
-		getRequestSpecification();
-		getResponseSpecification();
-	}
-	
-	@Test(groups = "cucumber", description = "Cucumber feature file runner", dataProvider = "features")
-	public void feature(CucumberFeatureWrapper cucumberFeature){
-		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
-	}
-	
-	@DataProvider
-	public Object[][] features(){
-		return testNGCucumberRunner.provideFeatures();
-	}
-	
-	@BeforeTest(alwaysRun=true)
-	public void beforeTest(){
-		
-	}
-	
-	@AfterTest(alwaysRun=true)
-	public void afterTest(){
-	}
-	
-	@After
-	public void tearDownClass(){
-		System.out.println("After");
-		softAssert.assertAll();
-	}
-*/
 }
