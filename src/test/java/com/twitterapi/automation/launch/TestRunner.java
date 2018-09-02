@@ -14,5 +14,5 @@ import cucumber.api.CucumberOptions;
 		tags={"@run"},
 		plugin={"pretty"}
 		)
-public class TestRunner{}
-
+public class TestRunner{
+}

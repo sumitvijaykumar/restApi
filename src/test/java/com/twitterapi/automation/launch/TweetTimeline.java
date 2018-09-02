@@ -71,8 +71,6 @@ public class TweetTimeline extends Specifications {
 	@When("^user posts the status$")
 	public void user_posts_the_status() {
 		underTestTweetResponse = tweetUnderTest.postQuery();
-	//	underTestTweetResponse = given().spec(requestSpecification).param("id",currectTweetId)
-	//				.when().get(ResourcePaths.STATUS_SHOW);
 	}
 
 	@Then("^status should have expected text$")
@@ -89,7 +87,6 @@ public class TweetTimeline extends Specifications {
 
 	@Then("^status should have expected attachment$")
 	public void status_should_have_url() {
-		//System.out.println(underTestTweetResponse.print());
 		String responseUrl = underTestTweetResponse.body().path("quoted_status.entities.media.expanded_url").toString();
 		String formattedResponseUrl = responseUrl.replace("[", "").replace("]", "").replace("\\", "");
 		softAssert.assertThat(formattedResponseUrl).contains(ResourcePaths.STATUS_ATTACHMENT);
