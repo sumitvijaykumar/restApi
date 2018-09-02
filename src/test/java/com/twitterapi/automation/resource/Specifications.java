@@ -18,7 +18,7 @@ public class Specifications {
 	
 	public static AuthenticationScheme getAuthScheme(){
 		AuthenticationScheme authScheme;
-		authScheme = RestAssured.oauth(Creds.CONSUMER_KEY, Creds.CONSUMER_SECRET, Creds.ACCESS_TOKEN, Creds.ACCESS_SECRET);
+		authScheme = RestAssured.oauth(Credentials.CONSUMER_KEY, Credentials.CONSUMER_SECRET, Credentials.ACCESS_TOKEN, Credentials.ACCESS_SECRET);
 		return authScheme;
 	}
 	
