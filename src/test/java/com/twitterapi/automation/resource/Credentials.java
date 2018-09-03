@@ -3,7 +3,7 @@ package com.twitterapi.automation.resource;
 public class Credentials {
 	
 	private static String api = System.getenv("Keys");
-	private static String[] arrayApi = api.split(";");
+	private static String[] arrayApi = api.split(",");
 	
 	public static String CONSUMER_KEY = arrayApi[0];
 	public static String CONSUMER_SECRET = arrayApi[1];
