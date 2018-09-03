@@ -1,21 +1,9 @@
 package com.twitterapi.automation.stepfiles;
 
 import static io.restassured.RestAssured.given;
-import net.thucydides.core.annotations.Steps;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 //import net.thucydides.core.annotations.Steps;
-
-
-
-
-
-
-
-
-
-
-
 import com.twitterapi.automation.UpdateStatus;
 import com.twitterapi.automation.contants.ResourcePaths;
 import com.twitterapi.automation.resource.Specifications;
@@ -33,11 +21,9 @@ public class UpdateStatusSteps extends Specifications {
 	
 	private RequestSpecification tweetRequest;
 	
-	@Steps
-	private UpdateStatus existingTweet;
+	private UpdateStatus existingTweet = new UpdateStatus();
 
-	@Steps
-	private UpdateStatus tweetUnderTest;
+	private UpdateStatus tweetUnderTest= new UpdateStatus();
 
 	@Given("^there already exists a tweet with a status \"([^\"]*)\"$")
 	public void there_exists_a_tweet(String status) {

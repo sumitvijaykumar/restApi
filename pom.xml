@@ -14,34 +14,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
-
-		<dependency>
-			<groupId>net.serenity-bdd</groupId>
-			<artifactId>serenity-junit</artifactId>
-			<version>1.9.26</version>
-			<scope>test</scope>
-		</dependency>
-<!-- 		<dependency>
-			<groupId>net.serenity-bdd</groupId>
-			<artifactId>serenity-screenplay</artifactId>
-			<version>1.9.26</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.serenity-bdd</groupId>
-			<artifactId>serenity-screenplay-webdriver</artifactId>
-			<version>1.9.26</version>
-			<scope>test</scope>
-		</dependency>
- -->		<dependency>
-			<groupId>net.serenity-bdd</groupId>
-			<artifactId>serenity-cucumber</artifactId>
-			<version>1.9.8</version>
-			<scope>test</scope>
-		</dependency>
-
-
-
 		<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
 		<dependency>
 			<groupId>info.cukes</groupId>
@@ -121,67 +93,4 @@
 			<version>1.2.5</version>
 		</dependency>
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.20</version>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.20</version>
-				<configuration>
-					<includes>
-						<include>**/*Test.java</include>
-						<include>**/Test*.java</include>
-						<include>**/*TestSuite.java</include>
-						<include>**/When*.java</include>
-					</includes>
-					<systemPropertyVariables>
-						<webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
-					</systemPropertyVariables>
-					
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>integration-test</goal>
-							<goal>verify</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>net.serenity-bdd.maven.plugins</groupId>
-				<artifactId>serenity-maven-plugin</artifactId>
-				<version>1.9.26</version>
-				<configuration>
-					<tags>${tags}</tags>
-				</configuration>
-				<executions>
-					<execution>
-						<id>serenity-reports</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>aggregate</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>
