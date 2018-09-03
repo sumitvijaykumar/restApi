@@ -1,18 +1,17 @@
 //rename class to TestRunner to run it with maven
 
 package com.twitterapi.automation;
-import net.serenitybdd.cucumber.CucumberWithSerenity;
-
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 
-@RunWith(CucumberWithSerenity.class)
+@RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/java/com/twitterapi/automation/features",
 		glue={"com.twitterapi.automation"},
 		tags={"@run"},
-		plugin={"pretty"}
+		plugin={"pretty", "json:target/cucumber-reports/cucumber.json"}
 		)
 public class TestRunner{
 }
