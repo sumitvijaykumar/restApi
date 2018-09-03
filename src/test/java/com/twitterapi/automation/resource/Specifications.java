@@ -18,6 +18,7 @@ public class Specifications {
 	
 	public static AuthenticationScheme getAuthScheme(){
 		AuthenticationScheme authScheme;
+		System.out.println(System.getenv("HOME"));
 		authScheme = RestAssured.oauth(Credentials.CONSUMER_KEY, Credentials.CONSUMER_SECRET, Credentials.ACCESS_TOKEN, Credentials.ACCESS_SECRET);
 		return authScheme;
 	}
