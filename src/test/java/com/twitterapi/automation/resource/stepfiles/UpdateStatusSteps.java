@@ -1,4 +1,4 @@
-package com.twitterapi.automation;
+package com.twitterapi.automation.resource.stepfiles;
 
 import static io.restassured.RestAssured.given;
 import net.thucydides.core.annotations.Steps;
