@@ -1,0 +1,1162 @@
+# Created on 2018-09-03T21:47:16.743
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created on 2018-09-03T21:47:17.542
+Unexpected IOException with stream:     [31mGiven [0m[31muser deletes existing status[0m  [90m# UpdateStatusSteps.delete_Status()[0m
+
+
+# Created on 2018-09-03T21:47:17.564
+Unexpected IOException with stream:       [31mnet.serenitybdd.core.exceptions.StepInitialisationException: Failed to create step library for UpdateStatus:java.lang.IllegalArgumentException-->Specification to merge with cannot be null
+	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:92)
+	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
+	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:76)
+	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:60)
+	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:42)
+	at net.serenitybdd.core.Serenity.injectScenarioStepsInto(Serenity.java:135)
+	at net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:101)
+	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:68)
+	at cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:51)
+	at cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:41)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+	at ?.user deletes existing status(src/test/java/com/twitterapi/automation/features/UpdateStatus.feature:4)
+Caused by: net.sf.cglib.core.CodeGenerationException: java.lang.IllegalArgumentException-->Specification to merge with cannot be null
+	at net.sf.cglib.core.ReflectUtils.newInstance(ReflectUtils.java:298)
+	at net.sf.cglib.proxy.Enhancer$EnhancerFactoryData.newInstance(Enhancer.java:448)
+	at net.sf.cglib.proxy.Enhancer.nextInstance(Enhancer.java:700)
+	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:295)
+	at net.sf.cglib.proxy.Enhancer.createHelper(Enhancer.java:480)
+	at net.sf.cglib.proxy.Enhancer.create(Enhancer.java:305)
+	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:207)
+	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:148)
+	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:139)
+	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:86)
+	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
+	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:76)
+	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:60)
+	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:42)
+	at net.serenitybdd.core.Serenity.injectScenarioStepsInto(Serenity.java:135)
+	at net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:101)
+	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:68)
+	at cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:51)
+	at cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:41)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: java.lang.IllegalArgumentException: Specification to merge with cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org
+
+# Created on 2018-09-03T21:47:17.574
+Unexpected IOException with stream: .codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
+	at io.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)
+	at io.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at io.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:1010)
+	at com.twitterapi.automation.pojos.UpdateStatus.<init>(UpdateStatus.java:34)
+	at com.twitterapi.automation.pojos.UpdateStatus$$EnhancerByCGLIB$$21fba0e1.<init>(<generated>)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at net.sf.cglib.core.ReflectUtils.newInstance(ReflectUtils.java:291)
+	... 50 more
+[0m
+
+
+# Created on 2018-09-03T21:47:17.586
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:17.598
+Unexpected IOException with stream:   @run
+
+
+# Created on 2018-09-03T21:47:17.609
+Unexpected IOException with stream:   Scenario: Test twitter status update                               [90m# src/test/java/com/twitterapi/automation/features/UpdateStatus.feature:7[0m
+
+
+# Created on 2018-09-03T21:47:17.620
+Unexpected IOException with stream:     [36mGiven [0m[36mthere already exists a tweet with a status "[0m[36m[1mFeeling good.[0m[36m"[0m [90m# UpdateStatusSteps.there_exists_a_tweet(String)[0m
+
+
+# Created on 2018-09-03T21:47:17.634
+Unexpected IOException with stream:     [36mAnd [0m[36muser wants update status with "[0m[36m[1mBlessed be my India[0m[36m"[0m          [90m# UpdateStatusSteps.user_wants_update_status_with(String)[0m
+
+
+# Created on 2018-09-03T21:47:17.647
+Unexpected IOException with stream:     [36mAnd [0m[36mwants to reply to status with text "[0m[36m[1mFeeling good[0m[36m"[0m            [90m# UpdateStatusSteps.wants_to_reply_to(String)[0m
+
+
+# Created on 2018-09-03T21:47:17.660
+Unexpected IOException with stream:     [36mAnd [0m[36mwants to attach a link[0m                                       [90m# UpdateStatusSteps.wants_to_attach()[0m
+
+
+# Created on 2018-09-03T21:47:17.673
+Unexpected IOException with stream:     [36mAnd [0m[36mcontent "[0m[36m[1mis not[0m[36m" sensitive[0m                                   [90m# UpdateStatusSteps.content_is_sensitive(String)[0m
+
+
+# Created on 2018-09-03T21:47:17.687
+Unexpected IOException with stream:     [36mAnd [0m[36mgeographical location is of "[0m[36m[1mPune[0m[36m"[0m                           [90m# UpdateStatusSteps.geographical_location_is_and(String)[0m
+
+
+# Created on 2018-09-03T21:47:17.700
+Unexpected IOException with stream:     [36mWhen [0m[36muser posts the status[0m                                       [90m# UpdateStatusSteps.user_posts_the_status()[0m
+
+
+# Created on 2018-09-03T21:47:17.711
+Unexpected IOException with stream:     [36mThen [0m[36mstatus should have expected text[0m                            [90m# UpdateStatusSteps.status_should_have_text()[0m
+
+
+# Created on 2018-09-03T21:47:17.720
+Unexpected IOException with stream:     [36mAnd [0m[36mstatus should be replied to former status[0m                    [90m# UpdateStatusSteps.status_should_have_existing_status()[0m
+
+
+# Created on 2018-09-03T21:47:17.729
+Unexpected IOException with stream:     [36mAnd [0m[36mstatus should have expected attachment[0m                       [90m# UpdateStatusSteps.status_should_have_url()[0m
+
+
+# Created on 2018-09-03T21:47:17.743
+Unexpected IOException with stream:     [36mAnd [0m[36mcontent should not be sensitive[0m                              [90m# UpdateStatusSteps.content_should_be_sensitive()[0m
+
+
+# Created on 2018-09-03T21:47:17.762
+Unexpected IOException with stream:     [36mAnd [0m[36mshould have location "[0m[36m[1mPune[0m[36m"[0m                                  [90m# UpdateStatusSteps.should_have_location(String)[0m
+
+
+# Created on 2018-09-03T21:47:17.903
+Unexpected IOException: 7,1,test,Test twitter status update(test),null,Failed to create step library for UpdateStatus:java.lang.IllegalArgumentException-->Specification to merge with cannot be null,null,Failed to create step library for UpdateStatus:java.lang.IllegalArgumentException-->Specification to merge with cannot be null,Failed to create step library for UpdateStatus:java.lang.IllegalArgumentException-->Specification to merge with cannot be null,net.serenitybdd.core.exceptions.StepInitialisationException: Failed to create step library for UpdateStatus:java.lang.IllegalArgumentException-->Specification to merge with cannot be null\000ACaused by: net.sf.cglib.core.CodeGenerationException: java.lang.IllegalArgumentException-->Specification to merge with cannot be null\000ACaused by: java.lang.IllegalArgumentException: Specification to merge with cannot be null\000A
+
+
+# Created on 2018-09-03T21:47:19.120
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.132
+Unexpected IOException with stream: [31mFailed scenarios:[0m
+
+
+# Created on 2018-09-03T21:47:19.139
+Unexpected IOException with stream: [31msrc/test/java/com/twitterapi/automation/features/UpdateStatus.feature:7 [0m
+
+# Created on 2018-09-03T21:47:19.145
+Unexpected IOException with stream: # Test twitter status update
+
+
+# Created on 2018-09-03T21:47:19.151
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.158
+Unexpected IOException with stream: 1
+
+# Created on 2018-09-03T21:47:19.165
+Unexpected IOException with stream:  Scenarios (
+
+# Created on 2018-09-03T21:47:19.171
+Unexpected IOException with stream: [31m1 failed[0m
+
+# Created on 2018-09-03T21:47:19.177
+Unexpected IOException with stream: )
+
+
+# Created on 2018-09-03T21:47:19.183
+Unexpected IOException with stream: 13
+
+# Created on 2018-09-03T21:47:19.189
+Unexpected IOException with stream:  Steps (
+
+# Created on 2018-09-03T21:47:19.196
+Unexpected IOException with stream: [31m1 failed[0m
+
+# Created on 2018-09-03T21:47:19.202
+Unexpected IOException with stream: , 
+
+# Created on 2018-09-03T21:47:19.209
+Unexpected IOException with stream: [36m12 skipped[0m
+
+# Created on 2018-09-03T21:47:19.215
+Unexpected IOException with stream: )
+
+
+# Created on 2018-09-03T21:47:19.221
+Unexpected IOException with stream: 0m
+
+# Created on 2018-09-03T21:47:19.228
+Unexpected IOException with stream: 2.128s
+
+
+# Created on 2018-09-03T21:47:19.237
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.245
+Unexpected IOException with stream: net.serenitybdd.core.exceptions.StepInitialisationException: Failed to create step library for UpdateStatus:java.lang.IllegalArgumentException-->Specification to merge with cannot be null
+
+# Created on 2018-09-03T21:47:19.251
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.258
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:92)
+
+# Created on 2018-09-03T21:47:19.264
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.270
+Unexpected IOException with stream: 	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
+
+# Created on 2018-09-03T21:47:19.276
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.282
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:76)
+
+# Created on 2018-09-03T21:47:19.288
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.295
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:60)
+
+# Created on 2018-09-03T21:47:19.301
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.307
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:42)
+
+# Created on 2018-09-03T21:47:19.313
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.319
+Unexpected IOException with stream: 	at net.serenitybdd.core.Serenity.injectScenarioStepsInto(Serenity.java:135)
+
+# Created on 2018-09-03T21:47:19.325
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.331
+Unexpected IOException with stream: 	at net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:101)
+
+# Created on 2018-09-03T21:47:19.341
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.347
+Unexpected IOException with stream: 	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:68)
+
+# Created on 2018-09-03T21:47:19.352
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.360
+Unexpected IOException with stream: 	at cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:51)
+
+# Created on 2018-09-03T21:47:19.367
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.373
+Unexpected IOException with stream: 	at cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:41)
+
+# Created on 2018-09-03T21:47:19.379
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.385
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+
+# Created on 2018-09-03T21:47:19.391
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.397
+Unexpected IOException with stream: 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+
+# Created on 2018-09-03T21:47:19.403
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.409
+Unexpected IOException with stream: 	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+
+# Created on 2018-09-03T21:47:19.417
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.424
+Unexpected IOException with stream: 	at cucumber.api.TestStep.run(TestStep.java:83)
+
+# Created on 2018-09-03T21:47:19.442
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.452
+Unexpected IOException with stream: 	at cucumber.api.TestCase.run(TestCase.java:58)
+
+# Created on 2018-09-03T21:47:19.459
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.465
+Unexpected IOException with stream: 	at cucumber.runner.Runner.runPickle(Runner.java:80)
+
+# Created on 2018-09-03T21:47:19.471
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.478
+Unexpected IOException with stream: 	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+
+# Created on 2018-09-03T21:47:19.484
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.490
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+
+# Created on 2018-09-03T21:47:19.497
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.503
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+
+# Created on 2018-09-03T21:47:19.510
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.517
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2018-09-03T21:47:19.522
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.529
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2018-09-03T21:47:19.536
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.542
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2018-09-03T21:47:19.549
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.555
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2018-09-03T21:47:19.562
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.567
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2018-09-03T21:47:19.574
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.580
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2018-09-03T21:47:19.587
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.593
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+
+# Created on 2018-09-03T21:47:19.599
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.605
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+
+# Created on 2018-09-03T21:47:19.612
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.619
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+
+# Created on 2018-09-03T21:47:19.625
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.632
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2018-09-03T21:47:19.638
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.645
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2018-09-03T21:47:19.651
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.657
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2018-09-03T21:47:19.663
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.669
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2018-09-03T21:47:19.675
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.682
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2018-09-03T21:47:19.689
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.695
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+
+# Created on 2018-09-03T21:47:19.700
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.706
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2018-09-03T21:47:19.712
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.719
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created on 2018-09-03T21:47:19.725
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.734
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+
+# Created on 2018-09-03T21:47:19.740
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.747
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+
+# Created on 2018-09-03T21:47:19.753
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.759
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created on 2018-09-03T21:47:19.766
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.772
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2018-09-03T21:47:19.779
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.785
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2018-09-03T21:47:19.792
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.798
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2018-09-03T21:47:19.804
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.811
+Unexpected IOException with stream: 	at ?.user deletes existing status(src/test/java/com/twitterapi/automation/features/UpdateStatus.feature:4)
+
+# Created on 2018-09-03T21:47:19.818
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.825
+Unexpected IOException with stream: Caused by: net.sf.cglib.core.CodeGenerationException: java.lang.IllegalArgumentException-->Specification to merge with cannot be null
+
+# Created on 2018-09-03T21:47:19.831
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.838
+Unexpected IOException with stream: 	at net.sf.cglib.core.ReflectUtils.newInstance(ReflectUtils.java:298)
+
+# Created on 2018-09-03T21:47:19.845
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.851
+Unexpected IOException with stream: 	at net.sf.cglib.proxy.Enhancer$EnhancerFactoryData.newInstance(Enhancer.java:448)
+
+# Created on 2018-09-03T21:47:19.858
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.865
+Unexpected IOException with stream: 	at net.sf.cglib.proxy.Enhancer.nextInstance(Enhancer.java:700)
+
+# Created on 2018-09-03T21:47:19.871
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.877
+Unexpected IOException with stream: 	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:295)
+
+# Created on 2018-09-03T21:47:19.883
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.890
+Unexpected IOException with stream: 	at net.sf.cglib.proxy.Enhancer.createHelper(Enhancer.java:480)
+
+# Created on 2018-09-03T21:47:19.896
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.903
+Unexpected IOException with stream: 	at net.sf.cglib.proxy.Enhancer.create(Enhancer.java:305)
+
+# Created on 2018-09-03T21:47:19.911
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.918
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:207)
+
+# Created on 2018-09-03T21:47:19.925
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.932
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:148)
+
+# Created on 2018-09-03T21:47:19.942
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.952
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:139)
+
+# Created on 2018-09-03T21:47:19.959
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.966
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:86)
+
+# Created on 2018-09-03T21:47:19.972
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.979
+Unexpected IOException with stream: 	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
+
+# Created on 2018-09-03T21:47:19.986
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:19.993
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:76)
+
+# Created on 2018-09-03T21:47:19.999
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.005
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:60)
+
+# Created on 2018-09-03T21:47:20.011
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.017
+Unexpected IOException with stream: 	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:42)
+
+# Created on 2018-09-03T21:47:20.024
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.030
+Unexpected IOException with stream: 	at net.serenitybdd.core.Serenity.injectScenarioStepsInto(Serenity.java:135)
+
+# Created on 2018-09-03T21:47:20.037
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.044
+Unexpected IOException with stream: 	at net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:101)
+
+# Created on 2018-09-03T21:47:20.049
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.057
+Unexpected IOException with stream: 	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:68)
+
+# Created on 2018-09-03T21:47:20.063
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.069
+Unexpected IOException with stream: 	at cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:51)
+
+# Created on 2018-09-03T21:47:20.075
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.081
+Unexpected IOException with stream: 	at cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:41)
+
+# Created on 2018-09-03T21:47:20.088
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.094
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+
+# Created on 2018-09-03T21:47:20.100
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.106
+Unexpected IOException with stream: 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+
+# Created on 2018-09-03T21:47:20.112
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.119
+Unexpected IOException with stream: 	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+
+# Created on 2018-09-03T21:47:20.125
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.131
+Unexpected IOException with stream: 	at cucumber.api.TestStep.run(TestStep.java:83)
+
+# Created on 2018-09-03T21:47:20.138
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.145
+Unexpected IOException with stream: 	at cucumber.api.TestCase.run(TestCase.java:58)
+
+# Created on 2018-09-03T21:47:20.151
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.158
+Unexpected IOException with stream: 	at cucumber.runner.Runner.runPickle(Runner.java:80)
+
+# Created on 2018-09-03T21:47:20.164
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.171
+Unexpected IOException with stream: 	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+
+# Created on 2018-09-03T21:47:20.178
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.185
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+
+# Created on 2018-09-03T21:47:20.192
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.199
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+
+# Created on 2018-09-03T21:47:20.205
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.212
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2018-09-03T21:47:20.219
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.225
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2018-09-03T21:47:20.235
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.245
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2018-09-03T21:47:20.252
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.259
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2018-09-03T21:47:20.266
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.272
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2018-09-03T21:47:20.279
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.286
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2018-09-03T21:47:20.292
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.299
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+
+# Created on 2018-09-03T21:47:20.306
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.312
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+
+# Created on 2018-09-03T21:47:20.318
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.325
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+
+# Created on 2018-09-03T21:47:20.331
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.338
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2018-09-03T21:47:20.345
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.350
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2018-09-03T21:47:20.356
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.362
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2018-09-03T21:47:20.369
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.375
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2018-09-03T21:47:20.381
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.391
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2018-09-03T21:47:20.397
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.403
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+
+# Created on 2018-09-03T21:47:20.409
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.415
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2018-09-03T21:47:20.421
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.427
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created on 2018-09-03T21:47:20.434
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.443
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+
+# Created on 2018-09-03T21:47:20.449
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.455
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+
+# Created on 2018-09-03T21:47:20.462
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.469
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created on 2018-09-03T21:47:20.475
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.482
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2018-09-03T21:47:20.488
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.494
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2018-09-03T21:47:20.501
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.507
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2018-09-03T21:47:20.514
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.521
+Unexpected IOException with stream: Caused by: java.lang.IllegalArgumentException: Specification to merge with cannot be null
+
+# Created on 2018-09-03T21:47:20.528
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.535
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2018-09-03T21:47:20.542
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.549
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.555
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.563
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.569
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.576
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.582
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.589
+Unexpected IOException with stream: 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+
+# Created on 2018-09-03T21:47:20.596
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.603
+Unexpected IOException with stream: 	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+
+# Created on 2018-09-03T21:47:20.610
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.617
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+
+# Created on 2018-09-03T21:47:20.623
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.630
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+
+# Created on 2018-09-03T21:47:20.637
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.644
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+
+# Created on 2018-09-03T21:47:20.649
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.655
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+
+# Created on 2018-09-03T21:47:20.662
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.669
+Unexpected IOException with stream: 	at io.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+
+# Created on 2018-09-03T21:47:20.675
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.682
+Unexpected IOException with stream: 	at io.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.688
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.694
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
+
+# Created on 2018-09-03T21:47:20.700
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.707
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
+
+# Created on 2018-09-03T21:47:20.713
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.720
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
+
+# Created on 2018-09-03T21:47:20.727
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.733
+Unexpected IOException with stream: 	at io.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)
+
+# Created on 2018-09-03T21:47:20.740
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.747
+Unexpected IOException with stream: 	at io.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.753
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.759
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-09-03T21:47:20.765
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.772
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+# Created on 2018-09-03T21:47:20.778
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.784
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+
+# Created on 2018-09-03T21:47:20.790
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.795
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:1010)
+
+# Created on 2018-09-03T21:47:20.801
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.808
+Unexpected IOException with stream: 	at com.twitterapi.automation.pojos.UpdateStatus.<init>(UpdateStatus.java:34)
+
+# Created on 2018-09-03T21:47:20.814
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.820
+Unexpected IOException with stream: 	at com.twitterapi.automation.pojos.UpdateStatus$$EnhancerByCGLIB$$21fba0e1.<init>(<generated>)
+
+# Created on 2018-09-03T21:47:20.826
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.832
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2018-09-03T21:47:20.839
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.845
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.851
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.857
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.865
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.871
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+
+# Created on 2018-09-03T21:47:20.879
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.885
+Unexpected IOException with stream: 	at net.sf.cglib.core.ReflectUtils.newInstance(ReflectUtils.java:291)
+
+# Created on 2018-09-03T21:47:20.890
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.897
+Unexpected IOException with stream: 	... 50 more
+
+# Created on 2018-09-03T21:47:20.903
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.909
+Unexpected IOException with stream: 
+
+
+# Created on 2018-09-03T21:47:20.916
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,com.twitterapi.automation.TestRunner,null,null,null
+
+

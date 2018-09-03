@@ -10,7 +10,7 @@ import cucumber.api.CucumberOptions;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
 		features="src/test/java/com/twitterapi/automation/features",
-		glue={"com.twitterapi.automation.stepfiles"},
+		glue={"com.twitterapi.automation"},
 		tags={"@run"},
 		plugin={"pretty"}
 		)
