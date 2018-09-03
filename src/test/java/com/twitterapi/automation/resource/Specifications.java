@@ -9,7 +9,7 @@ import io.restassured.specification.ResponseSpecification;
 
 import org.assertj.core.api.SoftAssertions;
 
-import com.twitterapi.automation.resource.contants.ResourcePaths;
+import com.twitterapi.automation.contants.ResourcePaths;
 
 public class Specifications {
 	protected static SoftAssertions softAssert;
@@ -18,7 +18,6 @@ public class Specifications {
 	
 	public static AuthenticationScheme getAuthScheme(){
 		AuthenticationScheme authScheme;
-		System.out.println(Credentials.CONSUMER_KEY);
 		authScheme = RestAssured.oauth(Credentials.CONSUMER_KEY, Credentials.CONSUMER_SECRET, Credentials.ACCESS_TOKEN, Credentials.ACCESS_SECRET);
 		return authScheme;
 	}
