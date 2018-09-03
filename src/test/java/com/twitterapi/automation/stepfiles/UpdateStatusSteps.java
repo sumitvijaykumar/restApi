@@ -16,7 +16,7 @@ import io.restassured.specification.RequestSpecification;
 
 
 
-
+import com.twitterapi.automation.UpdateStatus;
 import com.twitterapi.automation.contants.ResourcePaths;
 import com.twitterapi.automation.resource.Specifications;
 import com.twitterapi.automation.resource.Utilities;

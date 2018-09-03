@@ -1,4 +1,4 @@
-package com.twitterapi.automation.stepfiles;
+package com.twitterapi.automation;
 
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
