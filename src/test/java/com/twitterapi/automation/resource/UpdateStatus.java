@@ -1,12 +1,10 @@
-package com.twitterapi.automation;
+package com.twitterapi.automation.resource;
 
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import com.twitterapi.automation.contants.ResourcePaths;
-import com.twitterapi.automation.resource.Specifications;
-import com.twitterapi.automation.resource.Utilities;
 
 public class UpdateStatus extends Specifications {
 

@@ -4,9 +4,10 @@ import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 //import net.thucydides.core.annotations.Steps;
-import com.twitterapi.automation.UpdateStatus;
+
 import com.twitterapi.automation.contants.ResourcePaths;
 import com.twitterapi.automation.resource.Specifications;
+import com.twitterapi.automation.resource.UpdateStatus;
 import com.twitterapi.automation.resource.Utilities;
 
 import cucumber.api.java.en.Given;
